@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is my One Page Pizza Shop">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Week 4 | One Page Pizza Shop</title>
+        <!--Poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Link CSS-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <!--Navigation-->
+            <nav>
+                <menu>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                </menu>
+            </nav>
+
+            <div>
+                <!--Logo-->
+                <a href="index.html"><img src="./img/logo.png" alt="Header Pizza Shop Logo"></a>
+            </div>
+
+            <!--Navigation-->
+            <nav>
+                <menu>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </menu>
+            </nav>
+        </header>
+        <!--Assignment Masthead-->
+        <section class="assignment-masthead">
+            <h1 id="storeName">Dom's Pizzeria.</h1>
+            <img src="./img/pizza-img.jpg" alt="large image of pizza">
+        </section>
+        <main>
+            <!--under masthead text saying to start order-->
+            <form action="actionpage.php" method="post">
+                <div>
+                    <section>
+                        <h2>Start your Order!</h2>
+                    </section>
+                    <!--Size of the Pizza-->
+                    <section>
+                        <label>Size of your Pizza</label>
+                        <br>
+                        <input type="radio" name="small-size" value="Small">
+                        <label>Small</label>
+                        <input type="radio" name="medium-size" value="Medium">
+                        <label>Medium</label>
+                        <input type="radio" name="large-size" value="Large">
+                        <label>Large</label>
+                        <input type="radio" name="xlarge-size" value="XLarge">
+                        <label>X-Large</label>
+                        <br>
+                    </section>
+                    <!--Crust Type-->
+                    <section>
+                        <Label>Type of Crust</Label>
+                        <br>
+                        <input type="radio" name="thin-crust" value="Thin">
+                        <label>Thin Crust</label>
+                        <input type="radio" name="stuffed-crust" value="Stuffed">
+                        <label>Stuffed Crust</label>
+                        <input type="radio" name="regular crust" value="Regular">
+                        <label>Regular</label>
+                    </section>
+                    <!--Toppings, using checkboxes input-->
+                    <section>
+                        <!--Different Types of Meat / Protein Options-->
+                        <label>Meats</label>
+                        <br>
+                        <input type="checkbox" name="Pepperoni" value="Pepperoni">
+                        <label>Pepperoni</label>
+
+                        <input type="checkbox" name="Ham" value="Ham">
+                        <label>Ham</label>
+
+                        <input type="checkbox" name="Bacon" value="Bacon">
+                        <label>Bacon</label>
+
+                        <br>
+                    </section>
+                    <section>
+                        <!--Other Toppings-->
+                        <label>Other Toppings</label>
+                        <br>
+                        <input type="checkbox" name="Pineapple" value="Pineapple">
+                        <label>Pineapple</label>
+                        <input type="checkbox" name="Onions" value="Onions">
+                        <label>Onions</label>
+                        <input type="checkbox" name="Mushroom" value="Mushroom">
+                        <label>Mushroom</label>
+                        <input type="checkbox" name="Jalapenos" value="Jalapenos">
+                        <label>Jalapenos</label>
+                        <input type="checkbox" name="Green-Peppers" value="Green=Peppers">
+                        <label>Green Peppers</label>
+                        <input type="checkbox" name="Tomatoes" value="Tomatoes">
+                        <label>Tomatoes</label>
+                        <input type="checkbox" name="Olives" value="Olives">
+                        <label>Olives</label>
+                    </section>
+                    <!--Number of Pizzas-->
+                    <section>
+                        <label>Number of Pizzas</label>
+                        <br>
+                        <input type="number" name="quantity" min="1" max="10">
+                    </section>
+                </div>
+                <!--Contact Info-->
+                <div>
+                    <h2>Billing Info</h2>
+                    <!--Name, First and Last-->
+                    <section>
+                        <label>*Name</label>
+                        <br>
+                        <input type="Text" name="first-name" placeholder="First Name" required>
+                        <input type="Text" name="last-name" placeholder="Last Name" required>
+                        <br>
+                    </section>
+                    <!--Email-->
+                    <section>
+                        <label>*Email</label>
+                        <br>
+                        <input type="email" name="email" placeholder="JohnDoe@gmail.com" required>
+                        <br>
+                    </section>
+                    <!--PhoneNumber-->
+                    <section>
+                        <label>*Phone Number</label>
+                        <br>
+                        <input type="tel" name="phone#" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-555-5555" required>
+                        <br>
+                    </section>
+                    <!--Address-->
+                    <section>
+                        <label>*Home Address</label>
+                        <br>
+                        <input type="text" name="Home-Address" placeholder="111 Sesame Street" required>
+                        <br>
+                        <label>*City</label>
+                        <br>
+                        <input type="text" name="City" placeholder="Toronto" required>
+                        <br>
+                        <label>*Postal Code</label>
+                        <br>
+                        <input type="text" name="Postal Code" placeholder="A95 4A0" required>
+                        <br>
+                        <input type="submit" value="Complete Order">
+                    </section>
+                </div>
+                
+            </form>
+        </main>
+        <!--Aside with images of pizza with custom options-->
+        <aside>
+            <article>
+                <figure>
+                    <img src="./img/pizza-img2.jpg" alt="An image of a Delicious custom pizza">
+                    <figcaption>Here is an example of a pizza that you could make with custom options!</figcaption>
+                </figure>
+            </article>
+            <!--Two-->
+            <article>
+                <figure>
+                    <img src="./img/pizza-img3.jpg" alt="An image of another delicious custom pizza">
+                    <figcaption>Here is a second example of a pizza that you could make with custom options!</figcaption>
+                </figure>
+            </article>
+        </aside>
+        <footer>
+            <!--Footer Logo-->
+            <section>
+                <div class="footer-logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="footer logo"></a>
+                </div>
+            </section>
+            <!--Store name-->
+            <h6>Dom's Pizzeria Feedback</h6>
+            <!--Submit Feedback-->
+            <section>
+                <div class="feedback">
+                <p>Submit Feedback Below!</p>
+                <form action="somefile.php" method="post" enctype="multipart/form-data">
+                    <input name="name" placeholder="Your Name" type="text">
+                    <br>
+                    <input name="email" placeholder="johndoe@gmail.com" type="email">
+                    <br>
+                    <textarea placeholder="Leave a Message ..."></textarea> 
+                    <input type="submit" value="Send Form">
+                </form>
+            </div>
+            </section>
+        </footer>
+    </body>
+</html>

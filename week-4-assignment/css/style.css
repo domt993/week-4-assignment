@@ -1,0 +1,170 @@
+/*styling the body*/
+body {
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+/*styling h1 - h6*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+/*styling anchors, label, lists, and figcaption*/
+a, label, li, figcaption {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+/*making a grid and grid templates for body*/
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'header header header header'
+    'mast mast mast mast'
+    'aside main main main'
+    'footer footer footer footer';
+}
+
+/*styling the header, splitting the header into 3 sections, link, logo, link, making it centered as well*/
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+    background-color: beige;
+}
+
+/*sizing the div*/
+header > div { 
+    width: auto;
+    height: 190px;
+}
+/*sizing the image*/
+header > div > a > img {
+    width: auto;
+    height: 100%;
+}
+
+/*making the links be side by side with a gap in between rather then stacked on top of each other*/
+header > nav > menu, header > nav + nav > menu {
+    padding-left: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    list-style: none;
+}
+/*list color*/
+header > nav > menu > li {
+    color: #0e0e0e;
+}
+
+header > nav + nav > menu > li {
+    color: #0e0e0e;
+}
+
+/*styling the masthead*/
+/*making all the items and content centered in the masthead */
+.assignment-masthead {
+    background-color: beige;
+    grid-area: mast;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height:100vh;
+}
+
+/*used grid-area: 1 / 1; to create overlapping with the text and image with the use of google, and adjusted width and height*/
+.assignment-masthead > img { 
+    
+    width: 100%;
+    height: auto;
+}
+
+/*used position: absolute; to create the overlapping with the text and image with the use of google, and adjusted width and height*/
+#storeName {
+    
+    color: #f8f8f8; 
+    font-size: 76px;
+    position:absolute;
+}
+/*styling the main, adding a gap in the grid using grid-gap (found the use of it on google)*/
+main {
+    grid-area: main;
+    background-color: beige;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+}
+
+/*styling the div in the form, and centering everything*/
+main > form > div {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+/*styling the second div in the form, and centering everything again*/
+main > form > div + div {
+    align-items: center;
+    justify-items: center;
+}
+
+/*styling the sections in the first and second div, making them center*/
+main > form > div > section, main > form > div + div > section {
+    align-items: center;
+    justify-items: center;
+    padding:10px;
+}
+
+/*styling the aside*/
+aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #f1c89e;
+}
+
+/*styling the articles within the aside, setting height margin and width*/
+aside > article {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+/*sizing the img in the figures*/
+aside > article > figure > img, aside > article + article > figure > img {
+    width: 100%;
+    height: auto;
+}
+/*styling the footer, making the content aligned in the center of the footer, and justifying the content in center*/
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #C49E78;
+}
+
+/*footer logo div size*/
+.footer-logo {
+    height: 190px;
+    width: auto;
+}
+/*footer logo image size*/
+.footer-logo > a > img {
+    height: 100%;
+    width: auto;
+}
+/*footer feedback div size*/
+.feedback {
+    height: 200px;
+    width: auto;
+}
