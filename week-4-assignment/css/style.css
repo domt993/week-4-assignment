@@ -79,16 +79,14 @@ header > nav + nav > menu > li {
     height:100vh;
 }
 
-/*used grid-area: 1 / 1; to create overlapping with the text and image with the use of google, and adjusted width and height*/
+/*adjusted width and height of the img*/
 .assignment-masthead > img { 
-    
     width: 100%;
     height: auto;
 }
 
 /*used position: absolute; to create the overlapping with the text and image with the use of google, and adjusted width and height*/
 #storeName {
-    
     color: #f8f8f8; 
     font-size: 76px;
     position:absolute;
